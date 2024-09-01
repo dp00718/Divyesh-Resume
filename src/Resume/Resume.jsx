@@ -11,19 +11,32 @@ const Resume = () => {
       </div>
       <div className='resume_middle'>
         <div className='resume_middle_left'>
-            <div className='resume_middle_left1'>
-                <h4>Contact :</h4>
-                <p>Email : dp00718@gmail.com</p>
-                <p>Mobile No : 9726731599, 7016034249</p>
-                <p>Address : 98/B, Tuljanagar No - 02, B/H Makarpura St Depot, Vadodara - 390010</p>
-                <p>Linkedin : http://linkedin.com/in/divyesh-patel-45a4384b</p>
+        <div className='resume_middle_left1'>
+             <h4>Contact :</h4>
+             <p><span className="label">Email :</span> <span className="value">dp00718@gmail.com</span></p>
+             <p><span className="label">Mobile No :</span> <span className="value">9726731599, 7016034249</span></p>
+             <p><span className="label">Address :</span> <span className="value">98/B, Tuljanagar No - 02, B/H Makarpura St Depot, Vadodara - 390010</span></p>
+             <p><span className="label">Linkedin :</span> <span className="value">http://linkedin.com/in/divyesh-patel-45a4384b</span></p>
+        </div>
+
+        <div className='resume_middle_left2'>
+               <h4>Skills :</h4>
+           <div className="skills">
+             <div className="skill-item">
+               <span className="label">Online Communication:</span>
+               <span className="value">Proficiency</span>
+             </div>
+             <div className="skill-item">
+               <span className="label">Computer Proficiency:</span>
+               <span className="value">Coding + Microsoft</span>
+             </div>
+             <div className="skill-item">
+               <span className="label">Languages Known:</span>
+               <span className="value">Gujarati - Hindi - English</span>
+             </div>
             </div>
-            <div className='resume_middle_left2'>
-                <h4>Skills :</h4>
-                <p>Online Communication - Proficiency</p>
-                <p>Computer proficiency - Coding + Microsoft</p>
-                <p>Languages Known - Gujarati - Hindi - English</p>
-            </div>
+        </div>
+
             <div className='resume_middle_left3'>
                  <h4>Career Objectives :</h4>
                  <p>To pursue a highly challenging career in the field of IT Department, where I can apply my knowledge and acquire new skills. I fore see myself to be part of top-notch team of professional with Sincerity, Creativity and Dedication.</p>
@@ -37,30 +50,46 @@ const Resume = () => {
         </div>
         <div className='resume_middle_right'>
             <div className='resume_middle_right1'>
-                <h4>Work Details :</h4>
-                    <p>2012 - 2013 : Working as an apprentice in Jyoti Ltd as a junior engineer.</p><br />
-                    <p>2014 - Till Date : Working as an Assistant Executive Engineer in Pakona Engineers I Pvt Ltd. 
-                       Handling man power, Assembly department, trial and testing.
-                       Also assured fin al inspection of machine packing and SAP work.</p>  
+               <h4>Work Details :</h4>
+             <div className="work-details">
+                <div className="work-item">
+                    <span className="label">2012 - 2013 :</span>
+                    <span className="value">Working as an apprentice in Jyoti Ltd as a junior engineer.</span>
+                </div>
+                <div className="work-item">
+                    <span className="label">2014 - Till Date :</span>
+                    <span className="value">
+                          Working as an Assistant Executive Engineer in Pakona Engineers I Pvt Ltd. Handling manpower, Assembly department, trial and testing. Also assured final inspection of machine packing and SAP work.
+                    </span>
+                </div>
+             </div>
             </div>
+
             <div className='resume_middle_right2'>
-                <h4>Full Stack Developer :</h4>
-                <p>Knowledge of HTML, CSS and CSS Advance with detail designing of web site by  
-                   communication done with User Interface.</p>
-                <p>
-                Front end developer : Bootstrap, Java Script and Reactjs.
-                </p>
-                <p>
-                Back end developer : Expressjs using MongoDb database with reactjs.
-                </p>
-            </div>
+                   <h4>Full Stack Developer :</h4>
+              <div className="developer-details">
+                 <div className="detail-item">
+                     <span className="label">HTML, CSS, and Adv. CSS:</span>
+                     <span className="value">Detail designing of websites by communication done with User Interface.</span>
+                 </div>
+                 <div className="detail-item">
+                     <span className="label">Front End Developer:</span>
+                     <span className="value">Bootstrap, JavaScript, and React.js.</span>
+                 </div>
+                 <div className="detail-item">
+                     <span className="label">Back End Developer:</span>
+                     <span className="value">Express.js using MongoDB database with React.js.</span>
+                 </div>
+             </div>
+           </div>
+
             <div className='resume_middle_right3'>
                 <h4>Full Stack Developer E-commerce Project :</h4>
                 <p> E-commerce site developed using front end and back end with features of passing data
                 from frontend to backend and from backend to frontend by get, post and fetch functions.</p>
             </div>
             <div className='resume_middle_right4'>
-                <h5>Education :</h5>
+                <h4>Education :</h4>
                 <table>
                     <tr>
                         <th>Class</th>
