@@ -8,7 +8,7 @@
 
   .resume_header {
     text-align: center; 
-    border-bottom: 1px solid #555;
+    border-bottom: 1px dotted #555;
     padding-bottom: 15px;
 
     h1{
@@ -38,7 +38,7 @@
     .resume_middle_left, .resume_middle_right {
       width: 48%;
       text-align: left; /* Ensure all text aligns to the left */
-      border-bottom: 2px solid #ccc;
+      border-bottom: 2px dotted #ccc;
       padding-bottom: 20PX;
     }
 
@@ -176,7 +176,7 @@
 
     h4 {
       display: inline-block;
-      border-bottom: 2px solid #ccc;
+      border-bottom: 2px dotted #ccc;
       font-size: 1.5rem;
       color: #444;
       padding-bottom: 5px;
