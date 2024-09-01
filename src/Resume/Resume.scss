@@ -1,174 +1,124 @@
 .resume_main {
-    width: 62%;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  
-    .resume_header {
-      text-align: center;
-      border-bottom: 2px solid #333;
-      padding-bottom: 15px;
-  
-      h1 {
-        font-size: 2.5rem;
-        margin: 0;
-      }
-  
-      h3 {
-        font-size: 1.5rem;
-        margin: 5px 0;
-        color: #555;
-      }
-  
-      h5 {
-        font-size: 1.2rem;
-        margin: 5px 0;
-        color: #777;
-      }
-    }
-  
-    .resume_middle {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 20px;
-  
-      .resume_middle_left,
-      .resume_middle_right {
-        width: 48%; /* Adjusted for space between columns */
-      }
-  
-      .resume_middle_left1,
-      .resume_middle_left2,
-      .resume_middle_left3,
-      .resume_middle_right1,
-      .resume_middle_right2,
-      .resume_middle_right3,
-      .resume_middle_right4,
-      .resume_middle_right5 {
-        margin-bottom: 20px;
-        text-align: left;
-  
-        h4, h5 {
-          font-size: 1.5rem;
-          color: #444;
-          border-bottom: 2px solid #ccc;
-          padding-bottom: 5px;
-          margin-bottom: 10px;
-        }
-  
-        p {
-          font-size: 1rem;
-          margin: 5px 0;
-          line-height: 1.5;
-          color: #666;
-        }
-      }
-  
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-  
-        th,
-        td {
-          padding: 10px;
-          border: 1px solid #ccc;
-          text-align: center;
-        }
-  
-        th {
-          background-color: #f1f1f1;
-          font-weight: bold;
-        }
-      }
-    }
-  
-    .resume_footer {
-      text-align: right;
-      margin-top: 20px;
-  
-      h4 {
-        font-size: 1.5rem;
-        margin-bottom: 5px;
-      }
-  
-      p {
-        font-size: 1.2rem;
-        color: #444;
-      }
-    }
-  
-  
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
-   @media (max-width: 768px) {
-    .resume_middle {
-      flex-direction: column; /* Stack the columns on smaller screens */
+
+  .resume_header {
+    text-align: center; 
+    border-bottom: 1px solid #555;
+    padding-bottom: 15px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 5px 0;
+      color: #555;
     }
 
-    .resume_middle_left,
-    .resume_middle_right {
-      width: 100%; /* Full width for each section on smaller screens */
-      margin-bottom: 20px;
-    }
-
-    .resume_middle_left1,
-    .resume_middle_left2,
-    .resume_middle_left3,
-    .resume_middle_right1,
-    .resume_middle_right2,
-    .resume_middle_right3,
-    .resume_middle_right4,
-    .resume_middle_right5 {
-      margin-bottom: 15px;
-    }
-
-    table {
-      font-size: 0.9rem;
+    h5 {
+      font-size: 1.2rem;
+      margin: 5px 0;
+      color: #777;
     }
   }
 
-  @media (max-width: 480px) {
-    .resume_header {
-      h1 {
-        font-size: 2rem;
-      }
+  .resume_middle {
+    display: flex;
+    justify-content: flex-start; /* Align content to the start (left) */
 
-      h3 {
-        font-size: 1.2rem;
-      }
-
-      h5 {
-        font-size: 1rem;
-      }
+    .resume_middle_left, .resume_middle_right {
+      width: 48%;
+      text-align: left; /* Ensure all text aligns to the left */
     }
 
-    .resume_middle_left1,
-    .resume_middle_left2,
-    .resume_middle_left3,
-    .resume_middle_right1,
-    .resume_middle_right2,
-    .resume_middle_right3,
-    .resume_middle_right4,
-    .resume_middle_right5 {
-      h4, h5 {
-        font-size: 1.2rem;
-      }
+    h4 {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: #444;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
 
-      p {
-        font-size: 0.9rem;
-      }
+    p, td {
+      font-size: 12px;
+      margin: 5px 0;
+      text-align: left; /* Ensure all text aligns to the left */
     }
 
     table {
-      font-size: 0.8rem;
+      width: 100%;
+      border-collapse: collapse;
 
       th, td {
-        padding: 8px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: left; /* Ensure table text aligns to the left */
+      }
+
+      th {
+        background-color: #f2f2f2;
       }
     }
+  }
+
+  .resume_footer {
+    margin-top: 40px;
+    text-align: left; /* Align text to the left */
+
+    h4 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+  }
+}
+
+// Print-specific styles
+@media print {
+  .resume_main {
+    padding: 0;
+    font-size: 10px;
+
+    .resume_header {
+      h1 {
+        font-size: 20px;
+      }
+      h3, h5 {
+        font-size: 14px;
+      }
+    }
+
+    .resume_middle {
+      display: block;
+      justify-content: flex-start; /* Align content to the start (left) */
+
+      .resume_middle_left, .resume_middle_right {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left; /* Ensure all text aligns to the left */
+      }
+    }
+
+    .resume_footer {
+      margin-top: 10px;
+      text-align: left; /* Align text to the left */
+    }
+
+    // Remove background colors for printing
+    th {
+      background-color: #fff !important;
+    }
+  }
+
+  // Prevent page breaks inside these elements
+  .resume_main, .resume_header, .resume_middle, .resume_footer {
+    page-break-inside: avoid;
   }
 }

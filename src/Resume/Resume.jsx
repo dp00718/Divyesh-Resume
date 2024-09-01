@@ -28,6 +28,12 @@ const Resume = () => {
                  <h4>Career Objectives :</h4>
                  <p>To pursue a highly challenging career in the field of IT Department, where I can apply my knowledge and acquire new skills. I fore see myself to be part of top-notch team of professional with Sincerity, Creativity and Dedication.</p>
             </div>
+            <div className='resume_middle_left4'>
+                <h4>Declaration :</h4>
+                <p>
+                    Here I declared that the information related to me and my qualification is correct to the 
+                best of my knowledge and belief.</p>
+            </div>
         </div>
         <div className='resume_middle_right'>
             <div className='resume_middle_right1'>
@@ -82,12 +88,7 @@ const Resume = () => {
                     </tr>
                 </table>
             </div>
-            <div className='resume_middle_right5'>
-                <h5>Declaration :</h5>
-                <p>
-                    Here I declared that the information related to me and my qualification is correct to the 
-                best of my knowledge and belief.</p>
-            </div>
+            
         </div>
       </div>
       <div className='resume_footer'>
