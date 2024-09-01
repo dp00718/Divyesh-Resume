@@ -263,3 +263,35 @@
     page-break-inside: avoid;
   }
 }
+
+@media (max-width: 768px) {
+  .resume_main {
+    padding: 10px;
+    font-size: 10px; // Smaller font size for smaller screens
+
+    .resume_header {
+      h1 {
+        font-size: 2.5em; // Smaller font size for header
+      }
+
+      h3, h5 {
+        font-size: 1rem; // Smaller font size for subheadings
+      }
+    }
+
+    .resume_middle {
+      display: block; // Stack the left and right sections vertically
+
+      .resume_middle_left, .resume_middle_right {
+        width: 100%; // Full width on small screens
+        margin-bottom: 20px; // Margin between stacked sections
+        border-bottom: none; // Remove bottom border
+        padding-bottom: 15px; // Reduced padding
+      }
+    }
+
+    .resume_footer {
+      margin-top: 20px; // Reduced margin for smaller screens
+    }
+  }
+}
