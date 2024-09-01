@@ -20,26 +20,33 @@ const Resume = () => {
         </div>
 
         <div className='resume_middle_left2'>
-               <h4>Skills :</h4>
-           <div className="skills">
-             <div className="skill-item">
-               <span className="label">Online Communication:</span>
-               <span className="value">Proficiency</span>
-             </div>
-             <div className="skill-item">
-               <span className="label">Computer Proficiency:</span>
-               <span className="value">Coding + Microsoft</span>
-             </div>
-             <div className="skill-item">
-               <span className="label">Languages Known:</span>
-               <span className="value">Gujarati - Hindi - English</span>
-             </div>
-            </div>
-        </div>
+  <h4>Skills :</h4>
+  <div className="skills">
+    <div className="skill-item">
+      <span className="label">Online Communication:</span>
+      <div className="progress-bar" data-percentage="100">
+        <div className="progress"></div>
+      </div>
+    </div>
+    <div className="skill-item">
+      <span className="label">Computer Proficiency:</span>
+      <div className="progress-bar" data-percentage="100">
+        <div className="progress"></div>
+      </div>
+    </div>
+    <div className="skill-item">
+      <span className="label">English - Hindi - Gujarati:</span>
+      <div className="progress-bar" data-percentage="100">
+        <div className="progress"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <div className='resume_middle_left3'>
                  <h4>Career Objectives :</h4>
-                 <p>To pursue a highly challenging career in the field of IT Department, where I can apply my knowledge and acquire new skills. I fore see myself to be part of top-notch team of professional with Sincerity, Creativity and Dedication.</p>
+                 <p>To pursue a highly challenging career in the field of IT Department, where I can apply my knowledge and acquire new skills. <br />I fore see myself to be part of top-notch team of professional with Sincerity, Creativity and Dedication.</p>
             </div>
             <div className='resume_middle_left4'>
                 <h4>Declaration :</h4>
