@@ -1,297 +1,116 @@
 .resume_main {
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #333;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
 
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 
   .resume_header {
-    text-align: center; 
-    border-bottom: 1px dotted #555;
-    padding-bottom: 15px;
+    text-align: left;
+    margin-bottom: 20px;
 
-    h1{
-      font-family: 'Montserrat', sans-serif; /* Example font */
-      font-size: 3.5em; /* Adjust size as needed */
-      letter-spacing: 4px; /* Adjust spacing between letters */
-      text-transform: uppercase; /* Makes the name uppercase */
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      margin: 5px 10px;
-      color: #555;
-    }
-
-    h5 {
-      font-size: 1.2rem;
-      margin: 5px 5px;
-      color: #777;
+    h1, h3, h5 {
+      margin: 0;
     }
   }
 
   .resume_middle {
     display: flex;
-    justify-content: flex-start; /* Align content to the start (left) */
+    justify-content: space-between;
+    // align-items: flex-start;
+    align-items: stretch; // This will ensure both sections have the same height
 
-    .resume_middle_left, .resume_middle_right {
-      width: 48%;
-      text-align: left; /* Ensure all text aligns to the left */
-      border-bottom: 2px dotted #ccc;
-      padding-bottom: 20PX;
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
 
     .resume_middle_left {
+      width: 30%;
+      padding-right: 20px;
       background-color: #f5f5f5; /* Light grey for left section */
+
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-right: 0;
+      }
+
+      .resume_middle_left1,
+      .resume_middle_left2,
+      .resume_middle_left3,
+      .resume_middle_left4 {
+        margin-bottom: 20px;
+        text-align: left;
+
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          margin: 5px 0;
+        }
+        
+      }
     }
 
-    .resume_middle_left1 p {
-      display: flex;
-      align-items: flex-start; /* Aligns items vertically at the start */
-      margin-bottom: 10px; /* Adds space between paragraphs */
-    }
-    
-    .resume_middle_left1 .label {
-      font-weight: bold;
-      min-width: 100px; /* Set a minimum width for labels to align content vertically */
-      margin-right: 10px; /* Adds space between label and value */
-    }
-    
-    .resume_middle_left1 .value {
-      flex: 1; /* Ensures the value spans the remaining width */
-      word-wrap: break-word; /* Breaks the line if the content is too long */
-    }
-
-    .resume_middle_left2 {
+    .resume_middle_left1 {
       h4 {
-        margin-bottom: 15px;
-      }
-    
-      .skills {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .skill-item {
-        display: flex;
-        align-items: center;
         margin-bottom: 10px;
       }
     
-      .label {
-        font-weight: bold;
-        min-width: 200px; /* Adjust width as needed */
-        margin-right: 10px;
-      }
-    
-      .progress-bar {
-        position: relative;
-        width: 200px; /* Adjust width as needed */
-        height: 20px;
-        background-color: #e0e0e0; /* Light gray background */
-        border-radius: 5px;
-        overflow: hidden;
-    
-        &::before {
-          content: attr(data-percentage) '%'; /* Show percentage text inside the bar */
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-weight: bold;
-          color: #333;
-        }
-    
-        .progress {
-          height: 100%;
-          background-color: #1e90ff; /* Blue color for the filled part */
-          width: 0; /* Width will be adjusted via JS */
-          transition: width 0.5s ease-in-out;
-        }
-      }
-    }
-    
-
-   
-    
-    .resume_middle_right1 {
-      h4 {
-        margin-bottom: 15px; /* Adds space between the heading and content */
-      }
-    
-      .work-details {
+      p {
         display: flex;
-        flex-direction: column;
-      }
-    
-      .work-item {
-        display: flex; /* Aligns label and value side by side */
-        margin-bottom: 15px; /* Adds space between each work detail */
+        margin: 5px 0;
+        align-items: flex-start; // Aligns label and value at the top
       }
     
       .label {
-        font-weight: bold; /* Makes the label bold */
-        min-width: 120px; /* Fixed width to align the values vertically */
-        margin-right: 10px; /* Adds space between the label and value */
+        width: 100px; // Set a fixed width for labels
+        font-weight: bold; // Optional: make the label bold to differentiate from value
       }
     
       .value {
-        flex: 1; /* Ensures the value spans the remaining width */
-        word-wrap: break-word; /* Allows content to wrap to the next line if it's too long */
-      }
-    }
-
-    .resume_middle_right2 {
-      h4 {
-        margin-bottom: 15px; /* Adds space between heading and content */
-      }
-    
-      .developer-details {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .detail-item {
-        display: flex; /* Aligns label and value side by side */
-        margin-bottom: 10px; /* Adds space between each detail item */
-      }
-    
-      .label {
-        font-weight: bold; /* Emphasize the label */
-        min-width: 180px; /* Fixed width to align the values vertically */
-        margin-right: 10px; /* Adds space between label and value */
-      }
-    
-      .value {
-        flex: 1; /* Ensures the value spans the remaining width */
-        word-wrap: break-word; /* Allows content to wrap to the next line if it's too long */
+        flex: 1; // Allows the value to take up the remaining space
       }
     }
     
 
-    
-    
-    
+    .resume_middle_right {
+      width: 70%;
+      padding-left: 20px;
 
-    h4 {
-      display: inline-block;
-      border-bottom: 2px dotted #ccc;
-      font-size: 1.5rem;
-      color: #444;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
-
-    p, td {
-      font-size: 12px;
-      margin: 5px 0;
-      text-align: left; /* Ensure all text aligns to the left */
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-
-      th, td {
-        border: 1px solid #ccc;
-        padding: 5px;
-        text-align: left; /* Ensure table text aligns to the left */
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 0;
       }
 
-      th {
-        background-color: #f2f2f2;
+      .resume_middle_right1,
+      .resume_middle_right2,
+      .resume_middle_right3,
+      .resume_middle_right4 {
+        margin-bottom: 20px;
+        text-align: left;
+
+        .value_icon{
+          margin-right: 5px;
+        }
+
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        .work-item, .detail-item {
+          margin-bottom: 10px;
+        }
       }
     }
   }
 
   .resume_footer {
-    margin-top: 40px;
-    text-align: left; /* Align text to the left */
-
-    h4 {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-top: 40px;
-    }
-  }
-}
-
-// Print-specific styles
-@media print {
-  .resume_main {
-    padding: 0;
-    font-size: 10px;
-
-    .resume_header {
-      h1 {
-        font-size: 20px;
-      }
-      h3, h5 {
-        font-size: 14px;
-      }
-    }
-
-    .resume_middle {
-      display: block;
-      justify-content: flex-start; /* Align content to the start (left) */
-
-      .resume_middle_left, .resume_middle_right {
-        width: 100%;
-        margin-bottom: 20px;
-        text-align: left; /* Ensure all text aligns to the left */
-      }
-    }
-
-    .resume_footer {
-      margin-top: 10px;
-      text-align: left; /* Align text to the left */
-    }
-
-    // Remove background colors for printing
-    th {
-      background-color: #fff !important;
-    }
-  }
-
-  // Prevent page breaks inside these elements
-  .resume_main, .resume_header, .resume_middle, .resume_footer {
-    page-break-inside: avoid;
-  }
-}
-
-@media (max-width: 768px) {
-  .resume_main {
-    padding: 10px;
-    font-size: 10px; // Smaller font size for smaller screens
-
-    .resume_header {
-      h1 {
-        font-size: 2.5em; // Smaller font size for header
-      }
-
-      h3, h5 {
-        font-size: 1rem; // Smaller font size for subheadings
-      }
-    }
-
-    .resume_middle {
-      display: block; // Stack the left and right sections vertically
-
-      .resume_middle_left, .resume_middle_right {
-        width: 100%; // Full width on small screens
-        margin-bottom: 20px; // Margin between stacked sections
-        border-bottom: none; // Remove bottom border
-        padding-bottom: 15px; // Reduced padding
-      }
-    }
-
-    .resume_footer {
-      margin-top: 20px; // Reduced margin for smaller screens
-    }
+    text-align: left;
+    margin-top: 20px;
   }
 }
