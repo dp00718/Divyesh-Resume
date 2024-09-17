@@ -66,7 +66,7 @@ const Resume = () => {
                   <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Key Qualifications & Responsibilities :</h4>
               <div className="developer-details">
                  <div className="detail-item">
-                     <span className="label"><h5>V-Ex Tech Solutions:</h5></span>
+                     {/* <span className="label"><h5>V-Ex Tech Solutions:</h5></span> */}
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Developed full-stack web site which processed, analyzed, and rendered data visually.</span><br />
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Liaised with back end developers, front end developers, quality assurance testers, and CTO as needed.</span><br />
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Managed time-sensitive updates, including content changes and database upgrades.</span><br />
@@ -96,9 +96,9 @@ const Resume = () => {
                 from frontend to backend and from backend to frontend by get, post and fetch functions.</p>
             </div>
             <div className='resume_middle_right4'>
-                <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Education :</h4>
-                <h4>Bachelor of Mechanical</h4>
-                <p>2008 - 2012</p>
+                <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Education :</h4><br />
+                <p>Bachelor of Mechanical : CGPA 7.1</p>
+                <p>Year : 2008 - 2012</p> 
                 <p>Babaria Institute of Technology, Varnama, Vadodara</p>
             </div>
             <div className='resume_middle_right5'>
