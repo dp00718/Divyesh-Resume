@@ -93,6 +93,11 @@
         }
         
       }
+
+      @media (max-width: 768px) {
+        .resume_middle_left4{
+          display: none;
+        }}
     }
 
     .resume_middle_left1 {
@@ -114,6 +119,8 @@
       .value {
         flex: 1; // Allows the value to take up the remaining space
       }
+
+      
     }
     
 
@@ -135,7 +142,8 @@
       .resume_middle_right1,
       .resume_middle_right2,
       .resume_middle_right3,
-      .resume_middle_right4 {
+      .resume_middle_right4,
+      .resume_middle_right5{
         margin-bottom: 20px;
         text-align: left;
 
@@ -156,6 +164,15 @@
           
         }
       }
+      .resume_middle_right5{
+        display: none;
+      }
+      @media (max-width: 768px) {
+        .resume_middle_right5{
+          display: block;
+        }
+      }
+
     }
   }
 

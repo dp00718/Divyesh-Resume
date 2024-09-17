@@ -101,6 +101,12 @@ const Resume = () => {
                 <p>2008 - 2012</p>
                 <p>Babaria Institute of Technology, Varnama, Vadodara</p>
             </div>
+            <div className='resume_middle_right5'>
+            <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Declaration :</h4>
+                <p>
+                    Here I declared that the information related to me and my qualification is correct to the 
+                best of my knowledge and belief.</p>
+            </div>
             
         </div>
       </div>
