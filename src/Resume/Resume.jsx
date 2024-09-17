@@ -8,9 +8,9 @@ const Resume = () => {
   return (
     <div className='resume_main'>
       <div className='resume_header'>
-        <h1>Divyesh G Patel</h1>
-        <h3>Full Stack Developer</h3>
-        <h5>B.E.Mechanical</h5>
+        <h1>Divyesh G Patel</h1><br />
+        <h2>Full Stack Developer</h2>
+        <h4>B.E.Mechanical</h4>
       </div>
       <div className='resume_middle'>
         <div className='resume_middle_left'>
@@ -34,7 +34,9 @@ const Resume = () => {
 
             <div className='resume_middle_left3'>
             <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Career Objectives :</h4>
-                 <p>To pursue a highly challenging career in the field of IT Department, where I can apply my knowledge and acquire new skills. <br />I fore see myself to be part of top-notch team of professional with Sincerity, Creativity and Dedication.</p>
+                 <p>Learn a new programming language or framework, or to gain expertise in cloud computing.</p> <br />
+                  <p>Have interest in engaging with the open source community.</p><br />
+                  <p>My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do.</p>
             </div>
             <div className='resume_middle_left4'>
             <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Declaration :</h4>
@@ -61,10 +63,10 @@ const Resume = () => {
             </div>
 
             <div className='resume_middle_right2'>
-                   <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Key Qualifications & Responsibilities :</h4>
+                  <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Key Qualifications & Responsibilities :</h4>
               <div className="developer-details">
                  <div className="detail-item">
-                     <span className="label">V-Ex Tech Solutions:</span><br /><br />
+                     <span className="label"><h5>V-Ex Tech Solutions:</h5></span>
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Developed full-stack web site which processed, analyzed, and rendered data visually.</span><br />
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Liaised with back end developers, front end developers, quality assurance testers, and CTO as needed.</span><br />
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Managed time-sensitive updates, including content changes and database upgrades.</span><br />
@@ -73,7 +75,7 @@ const Resume = () => {
 
                  </div>
                  <div className="detail-item">
-                     <span className="label">Skills & Competencies :</span><br /><br />
+                     <span className="label"><h5>Skills & Competencies :</h5></span>
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">HTML/CSS.</span><br />
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">JAVASCRIPT</span><br />
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">REACTJS</span><br />
@@ -82,7 +84,7 @@ const Resume = () => {
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Debugging and Troubleshooting</span>
                  </div>
                  <div className="detail-item">
-                     <span className="label">Back End Developer:</span><br /><br />
+                     <span className="label"><h5>Back End Developer:</h5></span>
                      <MdNotStarted style={{color:'#2c3e50'}} className='value_icon'/><span className="value">Express.js using MongoDB database with React.js.</span>
                  </div>
              </div>
@@ -95,7 +97,7 @@ const Resume = () => {
             </div>
             <div className='resume_middle_right4'>
                 <h4><TbSectionFilled style={{marginRight:'5px', color:'#e67e22'}}/>Education :</h4>
-                <h3>Bachelor of Mechanical</h3>
+                <h4>Bachelor of Mechanical</h4>
                 <p>2008 - 2012</p>
                 <p>Babaria Institute of Technology, Varnama, Vadodara</p>
             </div>
