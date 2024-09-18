@@ -193,5 +193,11 @@
       display: inline-block;
       padding-bottom: 2.5px;
     }
+
+    @media (max-width: 768px) {
+    h4{
+      font-size: 1.2rem;
+    }
+    }
   }
 }
