@@ -97,7 +97,11 @@
       @media (max-width: 768px) {
         .resume_middle_left4{
           display: none;
-        }}
+        }
+      h4{
+        font-size: 1.2rem;
+      }
+      }
     }
 
     .resume_middle_left1 {
@@ -170,6 +174,10 @@
       @media (max-width: 768px) {
         .resume_middle_right5{
           display: block;
+        }
+
+        h4{
+          font-size: 1.2rem;
         }
       }
 
